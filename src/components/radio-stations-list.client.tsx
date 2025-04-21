@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import { use } from 'react';
 
 interface Props {
   id: string;
@@ -10,8 +13,10 @@ interface Props {
 export default function RadioStationsList({
   radioStations,
 }: {
-  radioStations: Props[];
+  radioStations: Promise<Props[]>
 }) {
+  const stations = use(radioStations);
+
   return (
     <div className="flex flex-col p-5">
       <div className="border-b pb-1 flex justify-between items-center mb-2">
@@ -21,7 +26,7 @@ export default function RadioStationsList({
       </div>
 
       <div className="h-54 overflow-y-auto">
-        {radioStations.map((radioStation) => {
+        {stations.map((radioStation) => {
           return (
             <div
               key={radioStation.id}
