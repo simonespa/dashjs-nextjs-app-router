@@ -34,6 +34,8 @@ export default function RadioStationsList({
               className="flex border-b py-3 cursor-pointer hover:shadow-md px-2 "
             >
               <Image
+                placeholder="blur"
+                blurDataURL="/globe.svg"
                 width={40}
                 height={40}
                 alt={radioStation.name}

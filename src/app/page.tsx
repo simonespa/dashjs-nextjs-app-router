@@ -5,6 +5,8 @@ import RadioStationsListFallback from "@/components/radio-stations-list-fallback
 import { getRadioStations } from "@/lib/get-radio-stations";
 import { Suspense } from "react";
 
+export { metadata } from "@/app/metadata";
+
 export default async function Home() {
   const radioStations = getRadioStations();
 

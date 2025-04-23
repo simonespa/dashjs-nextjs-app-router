@@ -21,6 +21,7 @@ export default function ProgrammeMetadata({
     />
   ) : (
     <Image
+      priority={true}
       width={320}
       height={180}
       src="/globe.svg"
