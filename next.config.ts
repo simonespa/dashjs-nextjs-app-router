@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'ichef.bbci.co.uk',
-        pathname: '/images/ic/**',
+        protocol: "https",
+        hostname: "ichef.bbci.co.uk",
+        pathname: "/images/ic/**",
       },
     ],
   },
