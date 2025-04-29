@@ -1,0 +1,11 @@
+.git/
+.gitignore
+.husky/
+.next/
+.prettierignore
+.prettierrc
+LICENSE
+next-env.d.ts
+node_modules/
+package-lock.json
+public/
